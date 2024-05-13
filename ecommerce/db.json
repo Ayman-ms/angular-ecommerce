@@ -1,0 +1,61 @@
+{
+  "user": [
+    {
+      "id": "2",
+      "firstName": "a title",
+      "lastName": 100,
+      "email": "s",
+      "password": "s"
+    },
+    {   
+      "id": "3276",
+      "firstName": "sad",
+      "lastName": "Mslmani",
+      "email": "aymaasd513@gmail.com",
+      "password": "Ayman1!ay"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "Mohamad Ayman",
+      "email": "ayma513@gmail.com",
+      "password": "Ayman1!ay"
+    },
+    {
+      "id": "22",
+      "name": "a title",
+      "email": "s",
+      "password": "s"
+    }
+  ],
+  "products": [
+    {
+      "productName": "a title",
+      "price": 1002,
+      "category": "s",
+      "color": "",
+      "descrption": "one",
+      "image": "https://www.telekom.de/resources/resp-images/1034228/ratio1x1/520/520/1125db32ae46317d1f15c92c7b1b8e10/b235/apple-iphone-15-pro-titan-natur-vorne-hinten.png",
+      "id": "1"
+    },
+    {
+      "productName": "",
+      "price": "100",
+      "category": "ssssad",
+      "color": "ffdfg",
+      "descrption": "twwo",
+      "image": "https://www.telekom.de/resources/resp-images/1034228/ratio1x1/520/520/1125db32ae46317d1f15c92c7b1b8e10/b235/apple-iphone-15-pro-titan-natur-vorne-hinten.png",
+      "id": "66"
+    },
+    {
+      "productName": "gfgh",
+      "price": "100",
+      "category": "s",
+      "color": "",
+      "descrption": "oneasdasdsad",
+      "image": "https://www.telekom.de/resources/resp-images/1034228/ratio1x1/520/520/1125db32ae46317d1f15c92c7b1b8e10/b235/apple-iphone-15-pro-titan-natur-vorne-hinten.png",
+      "id": "91"
+    }
+  ]
+}

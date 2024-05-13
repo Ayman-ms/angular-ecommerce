@@ -1,0 +1,17 @@
+.navbar{
+    background-color: transparent;
+}
+.logo{
+    color: var(--text-color);
+    font-weight: 800;
+}
+.search button{
+    border: 1px solid var(--second-text-color);
+    border-left: none;
+    background-color: #fff;
+}
+.search input{
+    border: 1px solid var(--second-text-color);
+    border-right: none;
+    border-radius: 0;
+}

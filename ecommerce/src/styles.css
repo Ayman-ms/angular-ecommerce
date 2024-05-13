@@ -1,0 +1,52 @@
+/* @import "../node_modules/alertifyjs/build/css/alertify.css";
+@import "../node_modules/alertifyjs/build/css/themes/bootstrap.min.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css"; */
+@import "primeicons/primeicons.css";
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }  
+  html, body {
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;  
+  }
+  :root{
+    --primary-color:#23A6F0;
+    --light-text-color:#FFFFFF;
+    --text-color:#252B42;
+    --second-text-color:#737373;
+    --hover-text-color:#2A7CC7;
+    --dark-background-color:#252B42;
+    --danger-color:#E74040;
+    --success-color:#2DC071;
+    --alert-color:#E77C40;
+    --star-color:#FFCE31;
+    --green-color:#23856D;    
+  }
+  .container{
+    padding-left: 15PX;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Small */
+@media (min-width: 768px) {
+    .container{
+      width: 750px;
+    }  
+  }
+  /* medium */
+  @media (min-width: 992px) {
+  .container{
+    width: 970px;
+  }  
+  }
+  /* large */
+  @media (min-width: 1200px) {
+  .container{
+    width: 1180px;
+  }  
+  }

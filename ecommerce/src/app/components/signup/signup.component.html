@@ -1,0 +1,39 @@
+<div class="singup" *ngIf="!loginForm">
+    <div class="card">
+        <h5 class="card-title">Sign Up</h5>
+        <img src="/assets/photos/singup card.jpg" class="card-img" alt="...">
+        <div class="card-body">
+            <form class="register-form" #userSingnup="ngForm">
+                <input class="form-input" type="text" ngModel placeholder="Vorname" name="firstName" required>
+                <input class="form-input" type="text" ngModel placeholder="Nachname" name="lastName" required>
+                <input class="form-input" type="email" ngModel placeholder="E-Mail-Addresse" name="email" required>
+                <input class="form-input" type="email" ngModel placeholder="E-Mail-Addresse Wiederholen" name="email"
+                    required>
+                <!-- <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"> -->
+                <!-- <label for="floatingInput">Email address</label> -->
+                <input class="form-input" type="password" ngModel placeholder="Password" name="password" required>
+                <input class="form-input" type="password" ngModel placeholder="Password Wiederholen" name="password"
+                    required>
+                <button class="form-click" [disabled]="userSingnup.form.invalid"
+                    (click)="signUp(userSingnup.value)">Singn up</button>
+                <button class="toggle-link" (click)="openLogin()">You Have Account!</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="singup" *ngIf="loginForm">
+    <div class="card">
+        <h5 class="card-title">Login</h5>
+        <div class="card-body">
+            <form class="login-form" #userLogin="ngForm">
+                <input class="form-input" type="email" ngModel placeholder="E-Mail-Addresse" name="email" required>
+                <input class="form-input" type="password" ngModel placeholder="Password" name="password" required>
+                <button class="btn btn-primary" [disabled]="userLogin.form.invalid"
+                    (click)="login(userLogin.value)">Login</button>
+                <button class="toggle-link" (click)="openSignup()">New With ECommerce? Just Register</button>
+            </form>
+        <!-- <p class="error-msg">{{authError}}</p> -->
+        </div>
+    </div>
+</div>
+<p-messages [(value)]="msg1" [enableService]="true" [closable]="true" />

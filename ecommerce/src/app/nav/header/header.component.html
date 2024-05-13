@@ -1,0 +1,54 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" aria-current="page" routerLink="">ECommerce</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngSwitch]="menuType">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Contact</a>
+              </li>
+            </ul>
+      
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+              <li class="nav-item">
+                <a class="nav-link" routerLink="add-product">Add Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="admin" aria-disabled="true">Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="products-list" aria-disabled="true">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">
+                  {{userName | titlecase}}
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" (click)="logout()"  aria-disabled="true">
+                  <i class="bi bi-box-arrow-in-right"></i>
+                </a>
+              </li>
+            </ul>
+            <a class="nav-link"  routerLink="signup" aria-disabled="true">
+                <i class="pi pi-user-plus pi-cog pe-2"></i>
+            </a>
+            <form class="d-flex search" role="search">
+              <input class="form-control" type="search" aria-label="Search">
+              <button class="p-2" type="submit"><i class="pi-sign-out pi-cog pe-2"></i></button>
+            </form>
+          </div>
+          <!-- {{menuType}} -->
+        </div>
+      </nav>
+</div>

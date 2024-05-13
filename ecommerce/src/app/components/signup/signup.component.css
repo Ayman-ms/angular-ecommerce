@@ -1,0 +1,44 @@
+.singup  {
+    display:flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.card{
+    width: 400px;
+    align-items: center;
+    border: 0;
+}
+.card .card-title{
+    padding: 15px;
+}
+form{
+    text-align: center;
+}
+form input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--second-text-color);
+    width: 300px;
+}
+.card-body button{
+    margin-top: 10px;
+    width: 90%;
+    padding:8px;
+   border: none;
+   border-radius: 5px;
+}
+.form-click{
+   color: var(--light-text-color);
+   background-color: var(--primary-color);
+}
+.form-click :hover{
+    background-color: var(--hover-text-color) ;
+}
+.toggle-link{
+   color:var(--text-color);   
+}
+.error-msg{
+    color: var(--danger-color);
+    text-align: center;
+}
